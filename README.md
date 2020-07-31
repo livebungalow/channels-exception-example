@@ -1,5 +1,5 @@
 A minimal example of an exception during consumer initialization not
-being reported.
+being reported, in support of [channels issue 1477][]
 
 How to reproduce:
 
@@ -37,3 +37,5 @@ then include
     channels-exception-example_background_workers_1 exited with code 1
 
 as expected.
+
+[channels issue 1477]: https://github.com/django/channels/issues/1477
