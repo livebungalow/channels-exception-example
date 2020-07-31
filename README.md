@@ -31,7 +31,9 @@ then include
     [...]
     background_workers_1  |   File "/usr/local/lib/python3.7/site-packages/channels/routing.py", line 169, in __call__
     background_workers_1  |     return self.application_mapping[scope["channel"]](scope)
-    background_workers_1  | TypeError: __init__() takes 1 positional argument but 2 were given
-    channels-silent_background_workers_1 exited with code 1
+    background_workers_1  |   File "/proj/app/consumers.py", line 8, in __init__
+    background_workers_1  |     raise Exception("example exception")
+    background_workers_1  | Exception: example exception
+    channels-exception-example_background_workers_1 exited with code 1
 
 as expected.
